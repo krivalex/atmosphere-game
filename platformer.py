@@ -2,6 +2,7 @@
 # НАЧАЛЬНАЯ ЧАСТЬ
 # --------------------------
 
+
 # импортируем библиотеку pygame
 import pygame
 
@@ -22,10 +23,10 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Atmosphere - Platformer")
 
 # загружаем иконку
-icon = pygame.image.load("images/server-icon.png").convert_alpha()
+# icon = pygame.image.load("images/server-icon.png").convert_alpha()
 
 # устанавливаем иконку
-pygame.display.set_icon(icon)
+# pygame.display.set_icon(icon)
 
 # загружаем фон
 bg = pygame.image.load("images/bg.png").convert_alpha()
@@ -85,7 +86,7 @@ jump_count = 9
 enemy_x = 810
 enemy_y = 300
 
-label = pygame.font.Font("./fonts/bionicle.ttf", 50)
+label = pygame.font.Font("fonts/bionicle.ttf", 50)
 lose_label = label.render("YOU LOSE", False, (255, 255, 255))
 restart_label = label.render("Play Again", False, (255, 255, 255))
 restart_label_rect = restart_label.get_rect(center=(WIDTH/2, HEIGHT/2 + 50))
